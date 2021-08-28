@@ -1,0 +1,195 @@
+/* font imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+
+/* global styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: hsl(225, 100%, 94%) url("../img/pattern-background-desktop.svg")
+    no-repeat fixed top;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* .order-summary--card styles */
+
+.order-summary--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.order-summary--card img {
+  border-radius: 15px 15px 0 0;
+  width: 28rem;
+}
+
+/* .order-summary--bio styles */
+
+.order-summary--bio {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #fff;
+  width: 28rem;
+}
+
+#title {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 28px;
+  color: hsl(223, 47%, 23%);
+}
+
+#text {
+  padding: 0 3.1rem 0 3.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+/* .order-summary--info styles */
+
+.order-summary--info {
+  width: 28rem;
+  background-color: #fff;
+}
+
+.annual-plan {
+  margin: 0 3rem 2rem 3rem;
+  height: 6.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr 0.7fr;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 11px;
+}
+
+.annual-plan--first-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.annual-plan--first-item img {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.annual-plan--second-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.annual-plan--second-item div {
+  margin: 0;
+  padding: 0;
+}
+
+#plan {
+  margin: 0;
+  padding-top: 1.5rem;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+#price {
+  margin: 0 0 1.8rem 0;
+  padding-top: 0.4rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+#change {
+  padding-right: 1.5rem;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+}
+
+#change:hover {
+  color: hsl(245, 76%, 71%);
+  text-decoration: none;
+}
+
+.annual-plan--third-item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+/* .order-summary--buttons styles */
+
+.order-summary--buttons {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 28rem;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+#first-button {
+  width: 22rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 10px 15px hsla(245, 75%, 52%, 0.4);
+}
+
+#first-button:hover {
+  background-color: hsl(245, 76%, 71%);
+}
+
+#second-button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+  margin-bottom: 2.2rem;
+}
+
+#second-button:hover {
+  color: hsl(223, 47%, 23%);
+}
